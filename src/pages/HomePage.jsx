@@ -187,7 +187,7 @@ const App = () => {
       <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div className="nav-container">
           <div className="logo" onClick={() => scrollToSection('home')}>
-            toXSL<span className="logo-accent">4</span>
+            toXSL
           </div>
           
           <div className={`nav-menu ${isMobileMenuOpen ? 'nav-menu-active' : ''}`}>
