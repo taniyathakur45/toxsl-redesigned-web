@@ -612,7 +612,7 @@ const App = () => {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-about">
-              <div className="footer-logo">toXSL</div>
+              <div className="footer-logo"><span className='logo-part-1'>to</span><span className='logo-part-2'>XSL</span></div>
               <p>Empowering businesses through innovative mobile and web solutions since 2010.</p>
               <div className="social-links">
                 <a href="#" className="social-link">📘</a>
