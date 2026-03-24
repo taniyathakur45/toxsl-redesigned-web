@@ -1372,3 +1372,157 @@ textarea.form-input {
     bottom: 5rem;
   }
 }
+
+/* Logo Styles */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-part-1 {
+  color: #dc2626; /* Red color */
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-part-2 {
+  color: #3b82f6; /* Blue color */
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Alternative: Solid colors without gradient */
+.logo-solid .logo-part-1 {
+  color: #dc2626; /* Solid red */
+  -webkit-text-fill-color: #dc2626;
+}
+
+.logo-solid .logo-part-2 {
+  color: #3b82f6; /* Solid blue */
+  -webkit-text-fill-color: #3b82f6;
+}
+
+/* Alternative: With number styling */
+.logo-with-number {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.logo-with-number .logo-part-1 {
+  color: #dc2626;
+  font-weight: 800;
+}
+
+.logo-with-number .logo-part-2 {
+  color: #3b82f6;
+  font-weight: 800;
+}
+
+.logo-number {
+  color: #1f2937;
+  font-weight: 800;
+  margin-left: 2px;
+}
+
+/* Hover effects */
+.logo-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.logo-hover-effect:hover .logo-part-1 {
+  text-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
+}
+
+.logo-hover-effect:hover .logo-part-2 {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .logo-part-1 {
+    color: #f87171; /* Lighter red for dark mode */
+  }
+  
+  .logo-part-2 {
+    color: #60a5fa; /* Lighter blue for dark mode */
+  }
+}
+
+/* Responsive logo sizes */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+}
+
+/* Animated logo */
+.logo-animated {
+  animation: fadeInLogo 0.5s ease-out;
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Logo with underline effect */
+.logo-underline {
+  position: relative;
+}
+
+.logo-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #dc2626, #3b82f6);
+  transition: width 0.3s ease;
+}
+
+.logo-underline:hover::after {
+  width: 100%;
+}
+
+/* 3D Logo Effect */
+.logo-3d {
+  text-shadow: 
+    1px 1px 0 #dc2626,
+    2px 2px 0 #3b82f6,
+    3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Glow Effect */
+.logo-glow:hover .logo-part-1 {
+  text-shadow: 0 0 8px rgba(220, 38, 38, 0.8);
+}
+
+.logo-glow:hover .logo-part-2 {
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+}
